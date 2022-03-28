@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:cantwait28/models/item_model.dart';
-import 'package:cantwait28/repositories/item_repository.dart';
+import 'package:cantwait28/models/items_model.dart';
+import 'package:cantwait28/repositories/items_repository.dart';
 
 part 'home_state.dart';
 
@@ -14,7 +14,7 @@ class HomeCubit extends Cubit<HomeState> {
   StreamSubscription? _streamSubscription;
 
   Future<void> start() async {
-    _streamSubscription = _itemsRepository.getIteamsStream().listen(
+    _streamSubscription = _itemsRepository.getItemsStream().listen(
       (items) {
         emit(HomeState(items: items));
       },

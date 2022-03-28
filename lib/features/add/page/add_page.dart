@@ -1,5 +1,5 @@
 import 'package:cantwait28/features/add/cubit/add_cubit.dart';
-import 'package:cantwait28/repositories/item_repository.dart';
+import 'package:cantwait28/repositories/items_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
